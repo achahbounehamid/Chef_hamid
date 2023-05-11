@@ -1,0 +1,11 @@
+{% extends "template.html.twig" %}
+{% block title %} {% endblock %}
+
+{% block content %}
+<h1>Kobeba</h1>
+<ul>
+{% for recipe in recipes %}
+<li><a href="{{ link }}{{ recipes.id }}">{{ recipe.title }}</a></li>
+{% endfor %}
+</ul>
+ {% endblock %}
