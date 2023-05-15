@@ -1,13 +1,14 @@
 <?php
 class Recipes
 {
-    private $recipesId;
+    private $recipes_id;
     private $title;
     private $date;
     private $duration;
     private $description;
-    private $thumdnail;
+    private $thumbnail;
     private $numberOfCovers;
+    private $user_id;
 
 
     public function __construct(array $datas)
@@ -27,39 +28,48 @@ class Recipes
     }
     /****GETTER***********/
 
-    public function getRecipesId(){
+    public function getRecipes_id(){
 
-        return $this->recipesId;
+        return $this->recipes_id;
     }
 
     public function getTitle(){
        
         return $this->title;
     } 
-    public function getdate(){
+
+    public function getDate(){
        
         return $this->date;
     } 
-    public function getduration(){
+
+    public function getDuration(){
 
         return $this->duration;
     }
 
-    public function getdescription(){
+    public function getDescription(){
        
         return $this->description;
     } 
-    public function getthumdnail(){
+
+    public function getThumbnail(){
        
-        return $this->thumdnail;
+        return $this->thumbnail;
     } 
+
     public function getNumberOfCovers(){
         return $this->numberOfCovers;
     }
 
+    public function getUser_id(){
+        return $this->numberOfCovers;
+    }
+
         /**SETTER***/
-       public function setRecipesId($recipesId){
-         $this->recipesId = $recipesId;
+
+       public function setRecipes_id($recipesId){
+         $this->recipes_id = $recipesId;
          return $this;
         }
                 
@@ -68,25 +78,34 @@ class Recipes
             $this->title = $title;              
             return $this;
         } 
-        public function settdate($date){
+
+        public function setDate($date){
              $this->date = $date;
              return $this;
         } 
-        public function setduration($duration){
+
+        public function setDuration($duration){
                 $this->duration =$duration;
                 return $this;
         }
                 
-        public function setdescription($description){
+        public function setDescription($description){
                 $this->description =$description;    
                 return $this;
         } 
-        public function setthumdnail($thumdnail){
-                $this->thumdnail =$thumdnail;     
-                return $this->thumdnail;
+
+        public function setThumbnail($thumdnail){
+                $this->thumbnail =$thumdnail;     
+                return $this->thumbnail;
          } 
+
          public function setNumberOfCovers($NumberOfCovers){
                 $this->numberOfCovers =$NumberOfCovers;      
                 return $this->numberOfCovers;
     }
+
+    public function setUser_id($user_id){
+        $this->user_id =$user_id;      
+        return $this->user_id;
+}
  }

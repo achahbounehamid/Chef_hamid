@@ -7,7 +7,9 @@ $router = new AltoRouter();
 $router->setBasePath('/php/Chef_hamid');
 
 $router->map( 'GET', '/','RecipesController#homePage','home');
-// $router->map( 'GET', '/post/','','basePost');
+$router->map('GET', '/recipe/', '', 'baseHome');
+$router->map( 'GET', '/recipe/[i:id]','RecipesController#getOne', 'baseRecipe' );
+
 // $router->map( 'GET', '/post/[i:id]','PostController#getOne','getOnePost');
 
 $match = $router->match();

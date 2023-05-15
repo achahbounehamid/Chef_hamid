@@ -1,25 +1,26 @@
 
     <?php
 class RecipeModel extends Model {
-   public function get(){
+   public function getLastTenRecipes(){
     $recipes = [];
 
-    $req = $this->getDb()->query('SELECT * FROM `recipes` ORDER BY `id` DESC LIMIT 10');
+    $req = $this->getDb()->query('SELECT * FROM `recipes` ORDER BY `recipes_id` DESC LIMIT 10');
     while ($recipe = $req->fetch((PDO::FETCH_ASSOC))){
         $recipes[] = new Recipes($recipe);
     }
     $req->closeCursor();
     return $recipes;
    }
-   public function getPost(int $id){
-    $req = $this->getDb()->prepare('SELECT * FROM `recipes` WHERE `id` = :id');
-    $req->bindParam('id' ,$id, PDO::PARAM_INT);
+   public function getOneRecipe(int $recipes_id){
+    $req = $this->getDb()->prepare('SELECT * FROM `recipes` WHERE `recipes_id` = :id');
+    $req->bindParam(':id' ,$recipes_id, PDO::PARAM_INT);
     $req->execute();
 
-    $recipe = $req->fetch(PDO::FETCH_ASSOC);
+    $recipe = new Recipes($req->fetch(PDO::FETCH_ASSOC));
+    
 
     $req->closeCursor();
 
-    return new Recipes($recipe);
+    return $recipe;
    }
 }

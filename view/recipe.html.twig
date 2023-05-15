@@ -1,0 +1,17 @@
+{% extends "template.html.twig" %}
+{% block title %} {% endblock %}
+{% block stylesheet %}<link href="{{ style }}css/style.css" rel="stylesheet">{% endblock %}
+
+{% block content %}
+<h1>Recettes</h1>
+
+<h2>{{ recipe.title }}</h2>
+<p>{{ recipe.description }}</p>
+<img src ="{{ base }}img/{{ recipe.thumbnail }}" alt ="{{ recipe.title }}">
+
+
+
+
+
+
+{% endblock %}

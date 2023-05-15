@@ -1,27 +1,29 @@
-<?php 
-class RecipesController extends Controller{
-    
+<?php
+class RecipesController extends Controller
+{
+
     public function homePage()
     {
-        
-        $Controller = new RecipesController();
+        global $router;
+        $Controller = new RecipeModel();
         // création instance du Controller
         $datas = $Controller->getLastTenRecipes();
         // j appelle la methode  getlast
-     
-        echo self::getTwig()->render('homePage.html.twig',['recipes'=> $datas]);
+
+        $link = $router->generate('baseHome');
+    
+        echo self::getTwig()->render('homepage.html.twig',['recipes' => $datas, 'link' => $link]);
     }
 
 
 
     public function getOne($id)
     {
-        $Controller = new RecipesController();
+        $Controller = new RecipeModel();
         // création instance du Controller
         $datas = $Controller->getOneRecipe($id);
         // j appelle la methode  getlast
-    
-        echo self::getTwig()->render('oneRecipes.html.twig',['recipe'=> $datas]);
+
+        echo self::getTwig()->render('recipe.html.twig', ['recipe' => $datas]);
     }
 }
-

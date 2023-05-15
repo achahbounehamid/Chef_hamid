@@ -1,11 +1,15 @@
 {% extends "template.html.twig" %}
 {% block title %} {% endblock %}
+{% block stylesheet %}<link href="{{ style }}css/style.css" rel="stylesheet">{% endblock %}
+
 
 {% block content %}
-<h1>Kobeba</h1>
+<h1>NOUVELLES RECETTES A TESTER</h1>
+
+
 <ul>
 {% for recipe in recipes %}
-<li><a href="{{ link }}{{ recipes.id }}">{{ recipe.title }}</a></li>
+<li><a href="{{ link }}{{ recipe.recipes_id }}">{{ recipe.title }}</a></li>
 {% endfor %}
 </ul>
  {% endblock %}
