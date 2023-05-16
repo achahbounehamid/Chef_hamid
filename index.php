@@ -14,7 +14,7 @@ $router->map( 'GET', '/recipe/[i:id]','RecipesController#getOne', 'baseRecipe' )
 
 $match = $router->match();
 if(is_array($match)){
-    list($controller, $action) = explode ('#', $match['target']);
+    list($controller, $action) = explode('#', $match['target']);
     // on veut que les info soient enreg dans une variable donc on utilise la methode list 
     $obj = new $controller();
 

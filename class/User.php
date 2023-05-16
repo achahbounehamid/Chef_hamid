@@ -29,16 +29,19 @@ public function getUserId()
         return $this->userId;
     }
 
+
 public function getPseudo()
     {
 
         return $this->pseudo;
     }
+
  public function getEmail()
     {
         
         return $this->eMail;
     }
+
 public function getPassword(){
         
         return $this->password;
@@ -52,18 +55,21 @@ public function getPassword(){
      return $this;
             
     }
+
 public function setPseudoId($pseudo) 
     {
       $this->pseudo = $pseudo;
         return $this;
                 
     }  
+
 public function setEmail($eMail) 
     {
           $this->pseudo = $eMail;
             return $this;
                     
     } 
+    
 public function setPassword($password)
     {
         $this->password = $password;

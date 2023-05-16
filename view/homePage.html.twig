@@ -4,12 +4,15 @@
 
 
 {% block content %}
-<h1>NOUVELLES RECETTES A TESTER</h1>
 
+<h1>Nouvelle recettes a tester</h1>
 
 <ul>
 {% for recipe in recipes %}
 <li><a href="{{ link }}{{ recipe.recipes_id }}">{{ recipe.title }}</a></li>
 {% endfor %}
 </ul>
+
+
+
  {% endblock %}

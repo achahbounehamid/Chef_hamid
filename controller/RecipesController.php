@@ -27,3 +27,4 @@ class RecipesController extends Controller
         echo self::getTwig()->render('recipe.html.twig', ['recipe' => $datas]);
     }
 }
+

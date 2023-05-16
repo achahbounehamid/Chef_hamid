@@ -4,11 +4,77 @@
   box-sizing: border-box;
 }
 
+/*************header******************/
 h1 {
   color: blue;
   margin: 20px 0 20px 100px;
   text-align: center;
   font-size: 40px;
+}
+
+header {
+  height: auto;
+  width: 100%;
+  background-color: rgb(48, 149, 161);
+}
+header .search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+header input[type=text] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+header button[type=submit] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+header button[type=submit]:hover {
+  transform: scale(1.2);
+}
+header h3 {
+  font-size: 20px;
+  margin-top: 100px;
+}
+header .logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 0 60px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo-name {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  list-style-type: none;
+  float: right;
+}
+header nav li a {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+header nav li .connexion {
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
 
 ul li a {
@@ -19,6 +85,7 @@ ul li a {
   color: rgb(59, 71, 74);
 }
 
+/***********************BODY**************/
 h2 {
   color: rgb(186, 31, 203);
   font-size: 50px;
@@ -30,6 +97,7 @@ p {
   font-size: 20px;
   color: rgb(82, 64, 70);
   margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -37,4 +105,21 @@ img {
   width: 410px;
   height: 360px;
   margin-top: 50px;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+}
+
+/**********************footer*******/
+footer {
+  width: auto;
+  background-color: rgb(48, 149, 161);
+}
+footer h4 {
+  text-align: center;
+  font-size: 20px;
+  color: floralwhite;
+}
+footer p {
+  font-size: 25px;
+  height: 100px;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

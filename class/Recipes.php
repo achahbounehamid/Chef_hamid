@@ -7,7 +7,7 @@ class Recipes
     private $duration;
     private $description;
     private $thumbnail;
-    private $numberOfCovers;
+    private $number_od_covers;
     private $user_id;
 
 
@@ -58,12 +58,12 @@ class Recipes
         return $this->thumbnail;
     } 
 
-    public function getNumberOfCovers(){
-        return $this->numberOfCovers;
+    public function getnumber_od_covers(){
+        return $this->number_od_covers;
     }
 
     public function getUser_id(){
-        return $this->numberOfCovers;
+        return $this->user_id;
     }
 
         /**SETTER***/
@@ -94,14 +94,14 @@ class Recipes
                 return $this;
         } 
 
-        public function setThumbnail($thumdnail){
-                $this->thumbnail =$thumdnail;     
+        public function setThumbnail($thumbnail){
+                $this->thumbnail =$thumbnail;     
                 return $this->thumbnail;
          } 
 
-         public function setNumberOfCovers($NumberOfCovers){
-                $this->numberOfCovers =$NumberOfCovers;      
-                return $this->numberOfCovers;
+         public function setnumber_od_covers($number_od_covers){
+                $this->number_od_covers =$number_od_covers;      
+                return $this->number_od_covers;
     }
 
     public function setUser_id($user_id){
