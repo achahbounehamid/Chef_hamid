@@ -1,28 +1,36 @@
 
-
+{% set acces = '/php/chef_hamid/' %}
 
 {% block content %} 
-    <header>
-    
-        <nav>
-       <div class="logo-name"> 
-            <img src="{{'assets/img/chef-hat.png'}}" alt="images" class="logo">
-            <h3>Chef hamid</h3> 
-        </div>
-                 <div class="search-bar">
-                    <input type="text" placeholder="Recherche">
-                    <button type="submit">Rechercher</button>
-                  </div>
+    <body>
+        <header>
+        
+                <nav>
+                    <div class="logo-name"> 
+                    <img src="{{'assets/img/chef-hat.png'}}" alt="images" class="logo">
+                    <h3>Chef hamid</h3> 
+                </div>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Recherche">
+                            <button type="submit">Rechercher</button>
+                        </div>
 
-            <ul>
-                <li><a href="http://localhost/php/chef_hamid/">Accueil</a></li>
-                <li><a href="#">Catégories</a></li>
-                <li><a href="#">Favoris</a></li> 
-                <li><a href="#" class="btn">Se connecter</a> <img src="{{'assets/img/connecter.png'}}" alt="images" class="connexion"></li>
-               
-            </ul>
-        </nav>
-    </header>
+                    <ul>
+                        <li><a href="http://localhost/php/chef_hamid/">Accueil</a></li>
+                        <li><a href="#">Catégories</a></li>
+                        <li><a href="#">Favoris</a></li> 
+                        <li><a href="{{ linkConnexion }}" class="btn">Se connecter</a> </li>
+                        {# <img src="{{'assets/img/connecter.png'}}" alt="images" class="connexion"> #}
+                    
+                    </ul>
+                </nav>
+    
+        </header>
+        <main>
+
+        </main>
+    </body>
+        
 {% endblock %}
 
 

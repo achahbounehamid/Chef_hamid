@@ -42,6 +42,7 @@ class ComposerStaticInitde0e901fced605040ca9efa5d16373d9
         'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
         'Category' => __DIR__ . '/../..' . '/class/Category.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'ConnexionController' => __DIR__ . '/../..' . '/controller/ConnexionController.php',
         'Controller' => __DIR__ . '/../..' . '/controller/Controller.php',
         'Favorites' => __DIR__ . '/../..' . '/class/Favorites.php',
         'Ingredient' => __DIR__ . '/../..' . '/class/Ingredient.php',
@@ -50,6 +51,7 @@ class ComposerStaticInitde0e901fced605040ca9efa5d16373d9
         'Recipes' => __DIR__ . '/../..' . '/class/Recipes.php',
         'RecipesController' => __DIR__ . '/../..' . '/controller/RecipesController.php',
         'User' => __DIR__ . '/../..' . '/class/User.php',
+        'UserModel' => __DIR__ . '/../..' . '/model/UserModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

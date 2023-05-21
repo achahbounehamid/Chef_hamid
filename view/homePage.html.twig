@@ -1,3 +1,4 @@
+{% set base = '/php/chef_hamid/assets/' %}
 {% extends "template.html.twig" %}
 {% block title %} {% endblock %}
 {% block stylesheet %}<link href="{{ style }}css/style.css" rel="stylesheet">{% endblock %}
@@ -5,7 +6,94 @@
 
 {% block content %}
 
-<h1>Nouvelle recettes a tester</h1>
+<h1>NOUVELLE RECETTES A TESTER</h1>
+<div id="recettes-a-tester">
+  <figure classe="kobeba">
+        <img src = "{{ base }}img/kobeba.jpg" alt ="images">
+        <p>KOBEABA <br> 1H5Min.-Facile</p>
+  </figure>
+  <figure classe="quiche-aux-asperges">
+        <img src = "{{ base }}img/quiche-asperge01.jpg" alt ="images">
+        <p>Quiche aux asperges <br> 1H5Min.-Facile</p>
+  </figure>
+  <figure classe="rouleaux-de-printemps">
+        <img src = "{{ base }}img/Rouleaux de printemps arc-en-ciel, sauce légère.jpg" alt ="images">
+        <p>Rouleaux de printemps <br> 20Min.-Facile</p>
+  </figure>
+
+
+
+</div>
+   <h1>ENTREE</h1>
+<div id="entree">
+  <figure classe="Verrine avocat et saumon fumé">
+        <img src = "{{ base }}img/Recettes de Saumon et Verrines.jpg" alt ="images">
+        <p>Verrine avocat et saumon fumé <br> 15Min.-Facile</p>
+  </figure>
+  <figure classe="Pastilla-légere">
+        <img src = "{{ base }}img/pastilla légere.jpg" alt ="images">
+        <p>Pastilla légere <br> 50Min.-Facile</p>
+  </figure>
+  <figure classe="salade  legume de saison">
+        <img src = "{{ base }}img/salade-legume-saison.jpg" alt ="images">
+        <p>salade  legume de saison <br> 15Min.-Facile</p>
+  </figure>
+
+
+
+</div>
+  <h1>PLATS</h1>
+<div id="plats">
+  <figure classe="Poulet-rôti">
+        <img src = "{{ base }}img/poulet_roti_persil.jpg" alt ="images">
+        <p>Poulet rôti <br> 1H20Min.-Moyen</p>
+  </figure>
+  <figure classe="Les moules-frites">
+        <img src = "{{ base }}img/Les moules-frites.jpg" alt ="images">
+        <p>Les moules-frites <br> 1H.-Facile</p>
+  </figure>
+  <figure classe="Les-quenelles">
+        <img src = "{{ base }}img/Les quenelles.jpg" alt ="images">
+        <p>Les quenelles <br> 45Min.-Facile</p>
+  </figure>
+</div>
+         <h1>DESSERT</h1>
+<div id="dessert">
+  <figure classe="Tiramisu-aux-framboises">
+        <img src = "{{ base }}img/Tiramisu aux framboises.jpg" alt ="images">
+        <p>Tiramisu aux framboises <br> 2H15Min.-Moyen</p>
+  </figure>
+  <figure classe="Carrot-cake">
+        <img src = "{{ base }}img/Carrot-cake.jpg" alt ="images">
+        <p>Carrot cake <br> 50Min.-Facile</p>
+  </figure>
+  <figure classe="Crème-caramel">
+        <img src = "{{ base }}img/Crème caramel.jpg" alt ="images">
+        <p>Crème caramel<br> 3H.-Moyen</p>
+  </figure>
+</div>
+                 <h1>CUISINE DU MONDE</h1>
+<div id="cuisine-du-monde">
+  <figure classe="Tajine-de-poulet-aux
+fruits secs">
+        <img src = "{{ base }}img/Tajine de poulet aux fruits secs.jpg" alt ="images">
+        <p>Tajine de poulet aux
+fruits secs <br> 1H10Min.-Moyen</p>
+  </figure>
+  <figure classe="La pizza-4-fromages">
+        <img src = "{{ base }}img/pizza-4-fromages.jpg" alt ="images">
+        <p>La pizza 4 fromages <br>1H.-Facile </p>
+  </figure>
+  <figure classe=" Salade-grecque">
+        <img src = "{{ base }}img/reccette de salade grecque.png" alt ="images">
+        <p> Salade grecque<br> 1H.-Facile</p>
+  </figure>
+
+
+
+</div>
+
+
 
 <ul>
 {% for recipe in recipes %}

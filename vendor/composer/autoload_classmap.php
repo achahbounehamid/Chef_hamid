@@ -9,6 +9,7 @@ return array(
     'AltoRouter' => $vendorDir . '/altorouter/altorouter/AltoRouter.php',
     'Category' => $baseDir . '/class/Category.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'ConnexionController' => $baseDir . '/controller/ConnexionController.php',
     'Controller' => $baseDir . '/controller/Controller.php',
     'Favorites' => $baseDir . '/class/Favorites.php',
     'Ingredient' => $baseDir . '/class/Ingredient.php',
@@ -17,4 +18,5 @@ return array(
     'Recipes' => $baseDir . '/class/Recipes.php',
     'RecipesController' => $baseDir . '/controller/RecipesController.php',
     'User' => $baseDir . '/class/User.php',
+    'UserModel' => $baseDir . '/model/UserModel.php',
 );

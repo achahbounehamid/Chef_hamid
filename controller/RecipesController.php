@@ -11,8 +11,8 @@ class RecipesController extends Controller
         // j appelle la methode  getlast
 
         $link = $router->generate('baseHome');
-    
-        echo self::getTwig()->render('homepage.html.twig',['recipes' => $datas, 'link' => $link]);
+        $linkConnexion = $router->generate('connexion');
+        echo self::getTwig()->render('homepage.html.twig',['recipes' => $datas, 'linkConnexion'=> $linkConnexion, 'link' => $link]);
     }
 
 
