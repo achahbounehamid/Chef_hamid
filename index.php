@@ -7,14 +7,16 @@ $router = new AltoRouter();
 $router->setBasePath('/php/Chef_hamid');
 
 $router->map( 'GET', '/','RecipesController#homePage','home');
-$router->map('GET', '/recipe/', '', 'baseHome');//la route d'entrer
+$router->map('GET', '/recipe/', '', 'baseHome');//la route d'entrer(POINT)
 $router->map( 'GET', '/recipe/[i:id]','RecipesController#getOne', 'baseRecipe' );
-$router->map('GET|POST', '/connecter', 'ConnexionController#userConnexion', 'connexion');
-
+$router->map('GET', '/connecter', 'ConnexionController#userConnexion', 'connexion');
+$router->map('POST|GET', '/connect', 'ConnexionController#loginConnexion', 'login');
+$router->map('GET|POST', '/inscription', 'ConnexionController#pageInscription', 'userInscription');
+$router->map('GET', '/logout', 'ConnexionController#logout', 'logout');
 
 
 $match = $router->match();
-// var_dump($match);
+var_dump($match);
 if(is_array($match)){
     list($controller, $action) = explode('#', $match['target']);
     // on veut que les info soient enreg dans une variable donc on utilise la methode list 

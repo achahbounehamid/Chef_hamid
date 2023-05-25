@@ -13,10 +13,20 @@ h1 {
   font-size: 40px;
 }
 
+h3 {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+h4 {
+  color: red;
+}
+
 header {
   height: auto;
   width: 100%;
   background-color: rgb(48, 149, 161);
+  padding-bottom: 40px;
 }
 header .search-bar {
   display: flex;
@@ -41,10 +51,6 @@ header button[type=submit] {
 }
 header button[type=submit]:hover {
   transform: scale(1.2);
-}
-header h3 {
-  font-size: 20px;
-  margin-top: 100px;
 }
 header .logo {
   width: 100px;
@@ -86,6 +92,20 @@ ul li a {
   margin-top: 10px;
   color: rgb(59, 71, 74);
 }
+ul li .btn {
+  background-color: #ffffff;
+  color: rgb(0, 119, 255);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+ul li .btn:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
 
 /***********************BODY**************/
 h2 {
@@ -93,6 +113,10 @@ h2 {
   font-size: 50px;
   margin-bottom: 50px;
   margin-left: 20px;
+}
+
+h4 {
+  color: red;
 }
 
 p {
@@ -110,12 +134,15 @@ img {
   box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.15);
 }
 
-#recettes-a-tester, #entree, #plats, #dessert, #cuisine-du-monde {
+ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-#recettes-a-tester img, #entree img, #plats img, #dessert img, #cuisine-du-monde img {
+ul li {
+  list-style-type: none;
+}
+ul img {
   height: 300px;
   width: 300px;
   border-radius: 30px;
@@ -123,30 +150,81 @@ img {
   box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
   margin: 40px 30px 0px 40px;
   cursor: pointer;
-  transform: scale(1);
+  transition: transform 0.2s;
 }
-#recettes-a-tester img:hover, #entree img:hover, #plats img:hover, #dessert img:hover, #cuisine-du-monde img:hover {
+ul img:hover {
   transform: scale(1.1);
 }
-#recettes-a-tester p, #entree p, #plats p, #dessert p, #cuisine-du-monde p {
+ul p {
   color: black;
   text-align: center;
   line-height: 28px;
   font-size: 20px;
 }
 
+form {
+  text-align: center;
+  border: 2px solid #e6e7e8;
+  border-radius: 5px;
+  width: 700px;
+  padding: 20px;
+  background-color: #e6e7e8;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+form input[type=text] {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: 2px solid #0f6afc;
+}
+form input[type=submit] {
+  font-family: raleway;
+  border-radius: 10px;
+  border: 2px solid #0f6afc;
+  background-color: #0f6afc;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+form input[type=submit]:hover {
+  background-color: #0057e3;
+  border: 2px solid #0057e3;
+}
+form td {
+  border: 2px solid #99bdf7;
+}
+form h3 {
+  color: #1362e0;
+  margin-bottom: 20px;
+}
+form span {
+  color: #0057e3;
+  margin-left: 100px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /**********************footer*******/
 footer {
   width: auto;
   background-color: rgb(48, 149, 161);
+  padding: 40px;
 }
 footer h4 {
   text-align: center;
-  font-size: 20px;
-  color: floralwhite;
+  font-size: 30px;
+  color: rgb(59, 71, 74);
+  margin-bottom: 20px;
 }
 footer p {
   font-size: 25px;
   height: 100px;
   color: black;
+}
+footer .réseaux-sociaux img {
+  width: 200px;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */

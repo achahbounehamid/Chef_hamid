@@ -2,12 +2,12 @@
 {% set acces = '/php/chef_hamid/' %}
 
 {% block content %} 
-    <body>
+   
         <header>
         
                 <nav>
                     <div class="logo-name"> 
-                    <img src="{{'assets/img/chef-hat.png'}}" alt="images" class="logo">
+                    <img src="{{ acces }}assets/img/chef-hat.png" alt="images" class="logo">
                     <h3>Chef hamid</h3> 
                 </div>
                         <div class="search-bar">
@@ -16,20 +16,22 @@
                         </div>
 
                     <ul>
-                        <li><a href="http://localhost/php/chef_hamid/">Accueil</a></li>
-                        <li><a href="#">Catégories</a></li>
+                        <li><a href="{{ acces }}">Accueil</a></li>
+                        <li><a href="#">Catégories</a>
+                            <a href="#">Entrée</a>
+                            <a href="#">Plas</a>
+
+                        </li>
                         <li><a href="#">Favoris</a></li> 
-                        <li><a href="{{ linkConnexion }}" class="btn">Se connecter</a> </li>
-                        {# <img src="{{'assets/img/connecter.png'}}" alt="images" class="connexion"> #}
+                        <li><a href="{{ linkConnexion }}" class="btn">Connexion</a> </li>
+                      
                     
                     </ul>
                 </nav>
     
         </header>
-        <main>
-
-        </main>
-    </body>
+       
+  
         
 {% endblock %}
 

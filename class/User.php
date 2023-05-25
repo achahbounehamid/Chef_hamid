@@ -1,9 +1,9 @@
 <?php
 class User
 {
-    private $userId;
+    private $user_id;
     private $pseudo;
-    private $eMail;
+    private $email;
     private $password;
 
     public function __construct(array $datas)
@@ -24,9 +24,9 @@ class User
 
               /*****getter******/
 
-public function getUserId()
+public function getUser_id()
     { 
-        return $this->userId;
+        return $this->user_id;
     }
 
 
@@ -39,7 +39,7 @@ public function getPseudo()
  public function getEmail()
     {
         
-        return $this->eMail;
+        return $this->email;
     }
 
 public function getPassword(){
@@ -49,31 +49,27 @@ public function getPassword(){
 
             /*********setter***** */
 
- public function setUserId($userId) 
+ public function setUser_id($user_id) 
     {
-     $this->userId = $userId;
-     return $this;
+     $this->user_id = $user_id;
             
     }
 
-public function setPseudoId($pseudo) 
+public function setPseudo($pseudo) 
     {
       $this->pseudo = $pseudo;
-        return $this;
                 
     }  
 
-public function setEmail($eMail) 
+public function setEmail($email) 
     {
-          $this->pseudo = $eMail;
-            return $this;
+          $this->email = $email;
                     
     } 
     
 public function setPassword($password)
     {
         $this->password = $password;
-        return $this;
     }
 
 }

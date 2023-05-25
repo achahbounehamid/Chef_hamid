@@ -1,14 +1,25 @@
 {% extends "template.html.twig" %}
-{% block content  %}
-     <form  method="POST" action="">
-        <h1>Bienvenu dans la page de connexion:</h1>
+ {% block header %}
+   {% include 'header.html.twig' %}
+{% endblock %}
 
-        <input type="text" name="pseudo" placeholder="Votre Pseudo"><br><br>
-        <input type="text" name="password" placeholder="Votre Mot de passe"><br><br>
+{% block content  %}
+{% if message %}
+   <p> message </p>
+   {% endif %}
+     <form  action="{{ link }}" method="POST" >
+        <h3>SE CONNECTER</h3>
+
+        <input type="text" name="pseudo" placeholder="Votre Pseudo" required><br><br>
+        <input type="text" name="password" placeholder="Votre Mot de passe" required><br><br>
         <input type="checkbox" name="check" id="check">
         <label for="check">se souvenir de moi</label><br><br>
+        <a href="{{ link3 }}"><span>S'inscrire</span></a> <br><br>
+        <a><span>Mot de passe oublié?</span></a> <br><br>
         <td align="centre"><br><input type="submit" value="Se Connecter">
-     </form>
+     </form> 
+
+
     
 
 

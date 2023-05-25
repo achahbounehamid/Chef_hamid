@@ -12,13 +12,14 @@
 
 </head>
 <body>
-      {% include 'header.html.twig' %}
-    
-      {% block content %}
+      {# {% include 'header.html.twig' %} #}
+    {% block header %}{% endblock %}
+        {% block content %}
 
-      {% endblock %}
+        {% endblock %}
     
         {% include 'footer.html.twig' %}
+
       {% block javascript %}{% endblock %}
 </body>
 </html>
